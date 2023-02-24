@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2? familia= Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,500;1,600;1,700;1,800;1,900 & display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  background: rgb(0, 128, 128);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+a .text-contacto:hover {
+  color: teal;
+  font-style: italic;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: white;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .left-side {
+  position: relative;
+  background: #d4e1ed;
+  padding: 40px;
+}
+.profileText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(8, 8, 8);
+}
+.profileText .imgBx {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 200px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+.profileText .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contactInfo {
+  padding-top: 20px;
+}
+.title {
+  color: #003147;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+.title:hover {
+  color: teal;
+}
+.contactInfo ul {
+  position: relative;
+}
+.contactInfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 5px 0;
+}
+.contactInfo ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #003147;
+}
+.icono {
+  display: inline-block;
+  width: 16px;
+  font-size: 18px;
+  color: #003147;
+}
+.contactInfo ul li span {
+  color: black;
+  font-weight: 300;
+  text-align: justify;
+}
+.contactInfo.education li {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+.contactInfo.education h4 {
+  color: black;
+}
+
+.container .right-side {
+  position: relative;
+  background: white;
+  padding: 50px;
+}
+.title_right {
+  padding: 40px 20px 40px 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.title_right h1 {
+  color: black;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+  text-shadow: 0.5px 0.5px 3px #2f4f4f;
+  font-family: "Poppins", serif;
+}
+.title_right h2 {
+  font-size: 35px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 2px 1px 2px #2f4f4f;
+  font-family: "Poppins", serif;
+}
+.about {
+  padding: 50px 20px 50px 20px;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+.about:last-child {
+  margin-bottom: 0;
+}
+.title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid;
+  border-color: rgba(0, 209, 216, 0.973);
+}
+.title2:hover {
+  color: teal;
+}
+p {
+  color: black;
+  text-align: justify;
+}
+
+.contactInfo.courses li {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+.contactInfo.courses h4 {
+  color: black;
+  cursor: pointer;
+}
+.contactInfo.courses h4:hover {
+  color: teal;
+  cursor: pointer;
+}
+
+.generate-pdf {
+  display: inline-block;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: 1.2rem;
+  color: #003147;
+  cursor: pointer;
+}
+.generate-pdf:hover {
+  color: teal;
+}
+
+.scale-cv .generate-pdf {
+  display: none;
+}
+
+.scale-cv .container {
+  margin: 10px;
+  max-width: 800px;
+  min-height: 800px;
+}
+
+.scale-cv .left-side {
+  padding: 20px 20px 0px 20px;
+}
+.scale-cv .right-side {
+  padding: 30px 30px 30px 15px;
+}
+
+.scale-cv .title_right {
+  padding: 20px 10px 20px 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .scale-cv .container {
+    max-width: 750px;
+    min-height: 1000px;
+  }
+
+  .scale-cv .left-side {
+    padding: 40px;
+  }
+  .scale-cv .right-side {
+    padding: 30px 30px 30px 30px;
+  }
+
+  .scale-cv .title_right {
+    padding: 10px;
+    margin-top: 150px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 684px) {
+  .title_right {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
